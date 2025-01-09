@@ -59,7 +59,7 @@ class _CameraDialogState extends ConsumerState<CameraDialog>
               child: MaskCameraView(
                 contentHeight: contentHeight,
                 rectangleTitle: AppLocalizations.of(context)!.takePicture,
-                rectanglePosition: RectanglePosition.bottom,
+                rectanglePosition: RectanglePosition.center,
                 onTakePicture: ({File? file, DeviceOrientation? orientation}) =>
                     _takePicture(file: file, orientation: orientation),
               ),

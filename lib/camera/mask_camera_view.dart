@@ -277,6 +277,7 @@ class _MaskCameraViewState extends ConsumerState<MaskCameraView>
         croppedImage = await cropImage(
             xFile: xFile,
             height: widget.contentHeight,
+            position: widget.rectanglePosition,
             orientation: orientation);
       }
       widget.onTakePicture?.call(file: croppedImage, orientation: orientation);

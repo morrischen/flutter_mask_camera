@@ -28,6 +28,6 @@ This project is a camera with mask for a Flutter application.
 ## More screenshots
 | **Mask at Top** | **Mask at Center** | **Mask at Bottom** |
 | ------------- | ------------- | ------------- |
-|![Screenshots](screenshots/camera_mask_top.png)|![Screenshots](screenshots/camera_mask_center.png)|![Screenshots](screenshots/camera_mask_bottom.png)|
+|![Screenshots](screenshots/top_camera_mask.png)|![Screenshots](screenshots/center_camera_mask.png)|![Screenshots](screenshots/bottom_camera_mask.png)|
 | **Top Cropped Image** | **Center Cropped Image** | **Bottom Cropped Image** |
-|![Screenshots](screenshots/center_cropped_Image.png)|![Screenshots](screenshots/center_cropped_Image.png)|![Screenshots](screenshots/center_cropped_Image.png)|
+|![Screenshots](screenshots/top_cropped_Image.png)|![Screenshots](screenshots/center_cropped_Image.png)|![Screenshots](screenshots/bottom_cropped_Image.png)|

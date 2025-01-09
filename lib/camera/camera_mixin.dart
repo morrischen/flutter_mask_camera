@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_mask_camera/camera/rectangle_clipping.dart';
 import 'package:image/image.dart' as img;
 import 'package:permission_handler/permission_handler.dart';
 import 'package:sensors_plus/sensors_plus.dart';
@@ -39,6 +40,7 @@ mixin CameraMixin {
   Future<File?> cropImage({
     required XFile xFile,
     required double height,
+    required RectanglePosition position,
     required DeviceOrientation? orientation,
   }) async {
     // 處理後的圖片
@@ -57,8 +59,19 @@ mixin CameraMixin {
         orientation == DeviceOrientation.portraitDown;
     // 若為直向模式則進行裁切圖片，否則處理旋轉圖片
     if (isPortrait) {
+      double top;
       // 計算裁切區域
-      final top = height * 0.5;
+      switch (position) {
+        case RectanglePosition.top:
+          top = 0;
+          break;
+        case RectanglePosition.center:
+          top = (imageHeight - height) * 0.5;
+          break;
+        case RectanglePosition.bottom:
+          top = imageHeight - height;
+          break;
+      }
       // 計算圖片與螢幕的縮放比例
       final scaleY = imageHeight / (height * 2);
       // 將 top 和 height 轉換成圖片的像素範圍
