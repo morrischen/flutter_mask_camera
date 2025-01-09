@@ -75,9 +75,7 @@ class _MaskCameraViewState extends ConsumerState<MaskCameraView>
     if (cameraController == null || !cameraController.value.isInitialized) {
       return;
     }
-    if (state == AppLifecycleState.inactive) {
-      cameraController.dispose();
-    } else if (state == AppLifecycleState.resumed) {
+    if (state == AppLifecycleState.resumed) {
       _initializeCameraController(cameraController.description);
     }
     super.didChangeAppLifecycleState(state);
