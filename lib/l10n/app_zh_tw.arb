@@ -1,0 +1,45 @@
+{
+   "@@locale": "zh_TW",
+   "sample": "範例",
+   "@sample":{
+      "description": "範例"
+   },
+   "confirm": "確定",
+   "@confirm":{
+      "description": "確定"
+   },
+   "cancel": "取消",
+   "@cancel":{
+      "description": "取消"
+   },
+   "takePicture": "請拍攝照片",
+   "@takePicture":{
+      "description": "請拍攝照片"
+   },
+   "dialogErrorTitle": "出錯了",
+   "@dialogErrorTitle": {
+     "description": "彈窗-錯誤標題"
+   },
+   "noCameraPermission": "請務必開啟相機權限",
+   "@noCameraPermission": {
+     "description": "請務必開啟相機權限"
+   },
+   "noCameraDescription": "啟動相機失敗，請關閉此畫面後重新開啟。",
+   "@noCameraDescription": {
+     "description": "啟動相機失敗，請關閉此畫面後重新開啟。"
+   },
+   "cameraStartError": "啟動相機失敗，失敗原因：{error}，請關閉APP後重新開啟。",
+   "@cameraStartError": {
+     "description": "啟動相機失敗，失敗原因：{error}，請關閉APP後重新開啟。",
+     "placeholders": {
+       "error": {
+         "type": "String",
+         "description": "錯誤原因"
+       }
+     }
+   },
+   "cameraDialogTitle": "拍照頁面",
+   "@cameraDialogTitle":{
+      "description": "拍照頁面"
+   }
+}
